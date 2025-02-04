@@ -41,7 +41,7 @@ const Conteudo = () => {
 					{parse(item.texto.substring(0, 100) + "...")}
 					<NavLink to={`/artigos/${item.slug}`}>Ver Mais</NavLink>
 					<h5>{item.data} - {item.tags.map((tag) => (
-						<NavLink to={`/busca?query=${tag}`}><p key={tag}><span>#</span>{tag}</p></NavLink>
+						<NavLink to={`/busca?query=${tag}`} key={tag}><p><span>#</span>{tag}</p></NavLink>
 					))}</h5>
 
 				</div>
