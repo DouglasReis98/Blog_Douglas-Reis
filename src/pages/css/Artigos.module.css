@@ -1,0 +1,85 @@
+#titulo {
+	font-family: 'Verdana', sans-serif;
+	text-transform: uppercase;
+	display: block;
+	background-color: #66c8f7;
+	font-size: 2em;
+	color: white;
+	text-align: center;
+	padding: 20px 40px 20px 50px;
+	position: relative;
+	top: 70px;
+}
+
+#img_artigo {
+	width: 60%;
+	display: block;
+	margin: 20px 0 10px 60px;
+	/*topo, direita, inferior, esquerda*/
+}
+
+#principal {
+	width: 100%;
+	height: 100%;
+	margin: 70px 0 0 0;
+}
+
+#principal h6 {
+	display: inline;
+	box-sizing: border-box;
+	width: 60%;
+	margin: 20px 0 10px 60px;
+	/*topo, direita, inferior, esquerda*/
+}
+
+#texto_artigo {
+	box-sizing: border-box;
+	width: 60%;
+	height: auto;
+	text-align: justify;
+	margin: 20px 0 10px 60px;
+	/*topo, direita, inferior, esquerda*/
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size: 1em;
+}
+
+#disqus_thread {
+	width: 90%;
+	margin: 20px 0 10px 60px;
+}
+
+/* Tablets Grandes e Laptops */
+@media (max-width: 1199px) {}
+
+/* Tablets Pequenos */
+@media (max-width: 991px) {
+
+	/********************ARTIGOS************************/
+	#titulo {
+		font-size: 1em;
+	}
+
+	#principal h6 {
+		width: 90%;
+		margin: 20px 0 10px 20px;
+		/*topo, direita, inferior, esquerda*/
+	}
+
+	#texto-artigo {
+		width: 90%;
+		margin: 20px 0 10px 20px;
+		/*topo, direita, inferior, esquerda*/
+	}
+
+	#disqus_thread {
+		width: 90%;
+		margin: 20px 0 10px 20px;
+	}
+
+}
+
+/* Dispositivos Pequenos */
+@media (max-width: 767px) {}
+
+/* Mobile */
+@media (max-width: 480px) {}

@@ -1,0 +1,378 @@
+/*fontes do titulo e subtitulo*/
+/*
+@font-face{
+	font-family:titulo;
+	src:url(../fontes/Righteous-Regular.woff);
+}
+@font-face{
+	font-family:subtitulo;
+	src:url(../fontes/Teko-Medium.woff);
+}*/
+
+@font-face{
+	font-family:padrao;
+	src:url(../fontes/franklin-gothic.woff);
+}
+/*RESET*/
+*{
+	margin:0;
+	padding: 0;
+	font-size:100%; font-family: padrao; font-weight: normal;
+box-sizing: border-box; border:none; outline: none;
+}
+
+	img{max-width: 100%;}
+	ul{list-style: none;}
+	a{text-decoration: none;}
+
+/*-----------------------------------------INDEX-----------------------------------------*/
+#cabecalho {
+   box-sizing: border-box;
+display: flex;
+	align-items: center;
+	height: 70px;
+	padding: 0 4rem 0 4rem;
+	justify-content: space-between;
+	background-image: linear-gradient(#5f97ff, #2222cc);
+	z-index: 1;
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+	
+#logo img {
+  	width:140px;
+	height:40px;
+	opacity:80%;
+	float: left;
+	filter: invert(100%);
+}
+
+#logo img:hover{
+	opacity: 100%;
+}
+
+/*MENU*/
+#menu-botoes{
+  display: flex;
+  gap: .5rem;
+}
+
+#menu a{
+  display: block;
+  padding: .5rem;
+  color: #ddf2ff;
+}
+
+#menu a:hover{
+  color: white;
+  transition: color 0.5s;
+}
+
+#btn-mobile{
+  display: none;
+}
+
+#aba-busca{
+padding: .3rem;
+}
+
+#pesquisa{
+    background-color: #5788f8;
+    border: solid 1px;
+    border-radius: 15px 0 0 15px;
+    color: white;
+    padding: 2px;
+    width: 13em;
+}
+
+::placeholder{
+color: white;
+}
+
+#btn-pesquisa{
+    background-color: #004eff;
+    padding: 2px;
+    border: solid 1px;
+    border-radius: 0 15px 15px 0;
+    color: white;
+}
+/*CONTEÚDO*/
+
+
+	#principal{
+		width: 100%;
+		height: 100%;
+		margin: 70px 0 0 0;
+	}
+	#conteudo{
+		width: 60%;
+		height: auto;
+		margin: 20px 0 10px 60px;/*topo, direita, inferior, esquerda*/
+		float: left;
+		justify-content: center;
+		border-bottom: 1px solid lightblue;
+	}
+
+	#conteudo img /*h2*/{
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	#conteudo h3{
+		font-size: 2em;
+		margin: 10px 0px 10px 0px;
+	}
+
+	#conteudo p{
+		font-family: Trebuchet MS;
+		font-size: 1em;
+		margin: 10px 0px 10px 0px;
+	}
+
+	#conteudo h5{
+		font-size: 1em;
+		margin: 10px 0px 10px 0px;
+	}
+
+/*---------ABA LATERAL----------*/
+	
+	.aba-lateral{
+	display: inline-block;
+	width: 25%;
+	height: auto;
+	margin: 20px 10px 5px 50px;/*topo, direita, inferior, esquerda*/
+	}
+
+/*ÚLTIMOS ARTIGOS*/
+
+	.ultimos-artigos{
+		width: 100%;
+		height: auto;
+		padding-bottom: 5px;
+	}
+
+	.ultimos-artigos h3{
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 1.2em;
+		padding: 5px;
+		color: #4463e8;
+		border-bottom: 1px solid lightblue;
+	}
+
+	.ultimos-artigos p{
+		font-family: Verdana, sans-serif;
+		font-size: 1em;
+		padding: 5px 20px;
+	}
+
+/*PUBLICIDADE*/
+	.publicidade{
+		width: 100%;
+		height: auto;
+		margin-bottom: 5px;
+	}
+
+		.publicidade h3{
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 1.2em;
+		padding: 5px;
+		color: #4463e8;
+		border-bottom: 1px solid lightblue;
+	}
+
+/*RODAPÉ*/
+footer{
+	background-image: linear-gradient(#2222cc, #5f97ff);
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+.rodape-col{
+	width: 350px;
+	text-align: center; 
+	line-height: 2em;
+	margin: 0 auto 0 auto; /*topo, direita, inferior, esquerda*/
+	padding-bottom: 60px;
+}
+
+.rodape-col a img{
+	max-width:350px;
+	max-height:340px;
+	margin-top: 50px;
+	filter: invert(100%);
+	    opacity: 50%;
+}
+
+.rodape-col a img:hover{
+	    opacity: 100%;
+	transition: opacity 0.5s;
+}
+
+.rodape-col h3{
+	font-size: 2em;
+	font-family: titulo;
+	color: grey;
+	opacity: 30%;
+
+}
+
+.redes{
+	width: auto;
+	margin: 10px 2em 0;
+	clear: both;
+}
+
+.redes li{
+	margin: 5px;
+	display: inline;
+	margin-right: auto; 
+	margin-left: auto;
+}
+
+.redes li i{
+	color: white;
+	opacity: 50%;
+	font-size: 30px;
+}
+
+.redes li i:hover{
+	opacity: 100%;
+	transition: opacity 0.2s;
+}
+
+.redes a{
+		padding-right: 10px;
+}
+
+.menu-rodape{
+	margin-top: 3em;
+}
+
+.menu-rodape li a{
+	color:lightgrey;
+	font-weight: bold;
+}
+
+.menu-rodape li a:hover{
+	color: white;
+	transition: color 0.2s;
+}
+
+.fone-email{
+	margin-top: 3em;
+	color: white;
+	width: auto;
+}
+
+.fone-email h3{
+	color: white;
+	font-family: "Arial";
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.fone-email li{
+	text-align: justify;
+	font-size: 1em;
+}
+
+
+/********************ARTIGOS************************/
+	#titulo{
+	font-family:'Verdana', sans-serif;
+	text-transform: uppercase;
+	display: block;
+	background-color: #66c8f7;
+	font-size: 2em;
+	color: white;	
+	text-align: center;
+	padding: 20px 40px 20px 50px;
+}
+
+	#img-artigo{
+		width: 60%;
+		display: block;
+		float: left;
+		margin: 20px 0 10px 60px;/*topo, direita, inferior, esquerda*/
+	}
+
+	#principal h6{
+		display: inline;
+		float: left;
+		box-sizing: border-box;
+		width: 60%;
+		margin: 20px 0 10px 60px;/*topo, direita, inferior, esquerda*/
+	}
+
+	#texto-artigo{
+	box-sizing: border-box;
+	width: 60%;
+	height: auto;
+	float: left;
+	text-align: justify;
+	margin: 20px 0 10px 60px;/*topo, direita, inferior, esquerda*/
+	font-family:'Trebuchet MS', sans-serif;
+	font-size: 1em;
+}		
+	#disqus_thread{	
+	width: 90%;
+    	margin: 20px 0 10px 60px;
+}
+
+/*-----------------------------------------CONTATO-----------------------------------------*/
+.contato {
+	width: 100%;
+	height: 100%;
+	margin-top: 70px;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contato table{
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	border: 2px solid lightblue;
+	border-radius: 10px;
+	margin-top: 30px;
+}
+
+.contato table input, textarea {
+		border: 1px solid grey;
+}
+
+.contato table td{
+	font-weight: bold;
+}
+
+.contato table td #nome{
+	width: 30em;
+}
+
+.contato table td #email{
+	width: 30em;
+}
+
+.contato table td #mensagem{
+	resize: none;
+	width: 30em;
+	height: 20em;
+}
+
+.btn {
+	padding: 5px;
+	font-weight: bold;
+	padding: 10px;
+	color: white;
+	background-color: #47b5e2;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Criar Postagem - Área Administrativa - DOUGLAS REIS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/criar_editar.css" />
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="../img/logoblog.png" alt="">
+            <h1>Área Administrativa</h1>
+        </div>
+
+        <div>
+            <a href=""><h1 class="toBlog">&larr; Portfólio</h1></a>
+        </div>
+    </header>
+
+    <button id="btnNav" class=""><span class="btn-hamburger"></span></button>
+    <nav>
+        <h3>Menu</h3>
+        <hr><br>
+        <h3>&larr; Home</h3>
+        <ul>
+            <li>Criar Postagem</li>
+            <li>Gerenciar Postagens</li>
+            <li>Sair</li>
+        </ul>
+        <!--
+            Criar Projeto
+Gerenciar Projetos
+Categorias
+Gerenciar Categorias
+Dados ADM
+Editar Dados
+        -->
+    </nav>
+
+    <main>
+        <div class="container">
+            
+            <h1>Criar Nova Postagem</h1>
+
+            <div class="msg_erro">
+                <h1>Mensagem de Erro</h1>
+            </div>
+
+            <form action="index.html" method="post">
+                <label for="titulo">Título:</label></br>
+                <input type="text" id="titulo" name="titulo">
+                </br>
+                <label for="titulo">Imagem:</label></br>
+                <input type="file" id="imagem" name="imagem">
+                </br>
+                <label for="texto">Texto:</label></br>
+                <textarea id="texto" name="texto"></textarea>
+                </br>
+                <label for="titulo">Tags:</label></br>
+                <input type="text" id="titulo" name="titulo">
+                </br>
+
+                <button type="submit" id="concluir">Concluir</button>
+
+            </form>
+
+        </div>
+    </main>
+
+    <section class="clearfix"></section>
+
+    <footer>
+
+        <h2>Frase Motivacional</h2>
+
+    </footer>
+</body>
+
+</html>

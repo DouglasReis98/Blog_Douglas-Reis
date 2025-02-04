@@ -1,0 +1,59 @@
+/*CABEÇALHO*/
+header{
+    padding: 0 .5rem 0 .5rem;
+}
+
+/*CONTEÚDO*/
+
+	#conteudo{
+		width: 60%;
+		height: auto;
+		margin: 40px 0 5px 45px;/*topo, direita, inferior, esquerda*/
+	}
+
+	#conteudo img /*h2*/{
+		width: 100%;
+		height: 100%;
+		padding: 10px;
+
+	}
+
+		#conteudo h3{
+		font-size: 1.5em;
+	}
+
+
+/*---------ABA LATERAL----------*/
+	
+	.aba-lateral{
+	display: inline-block;
+	width: 25%;
+	height: auto;
+	margin: 40px 10px 5px 20px;/*topo, direita, inferior, esquerda*/
+	}
+
+
+	/*RODAPÉ*/
+
+.rodape-col{
+	width: 230px;
+}
+
+.rodape-col a img{
+	max-width:200px;
+	max-height:190px;
+}
+
+.redes li i{
+	font-size: 25px;
+}
+
+/*----------CONTATO----------*/
+
+.contato{
+	height: 100%;
+}
+
+.contato table td #mensagem{
+	height: 22em;
+}

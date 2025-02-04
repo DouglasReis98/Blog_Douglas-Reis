@@ -1,0 +1,130 @@
+/*RODAPÉ*/
+footer{
+	background-image: linear-gradient(#2222cc, #5f97ff);
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+.rodape_col{
+	width: 350px;
+	text-align: center; 
+	line-height: 2em;
+	margin: 0 auto 0 auto; /*topo, direita, inferior, esquerda*/
+	padding-bottom: 60px;
+}
+
+.rodape_col a img{
+	width:350px;
+	margin-top: 50px;
+	filter: invert(100%);
+	    opacity: 50%;
+}
+
+.rodape_col a img:hover{
+	    opacity: 100%;
+	transition: opacity 0.5s;
+}
+
+.rodape_col h3{
+	font-size: 2em;
+	font-family: titulo;
+	color: grey;
+	opacity: 30%;
+
+}
+
+.redes{
+	width: auto;
+	margin: 10px 2em 0;
+	clear: both;
+}
+
+.redes li{
+	margin: 5px;
+	display: inline;
+	margin-right: auto; 
+	margin-left: auto;
+}
+
+.redes li svg{
+	color: white;
+	opacity: 50%;
+	font-size: 30px;
+}
+
+.redes li svg:hover{
+	opacity: 100%;
+	transition: opacity 0.2s;
+}
+
+.redes a{
+		padding-right: 10px;
+}
+
+.menu_rodape{
+	margin-top: 3em;
+}
+
+.menu_rodape li a{
+	color:lightgrey;
+	font-weight: bold;
+}
+
+.menu_rodape li a:hover{
+	color: white;
+	transition: color 0.2s;
+}
+
+.fone_email{
+	margin-top: 3em;
+	color: white;
+	width: auto;
+}
+
+.fone_email h3{
+	color: white;
+	font-family: "Arial";
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.fone_email li{
+	text-align: justify;
+	font-size: 1em;
+}
+
+/* Tablets Grandes e Laptops */
+@media (max-width: 1199px){
+	/*RODAPÉ*/
+
+.rodape-col{
+	width: 230px;
+}
+
+.rodape-col a img{
+	max-width:200px;
+	max-height:190px;
+}
+
+.redes li i{
+	font-size: 25px;
+}
+}
+
+/* Tablets Pequenos */
+@media (max-width: 991px){
+	footer{
+		background-image: linear-gradient(#2222cc, #5f97ff, #2222cc);
+	  }
+
+}
+/* Dispositivos Pequenos */
+@media (max-width: 767px){}
+
+/* Mobile */
+@media (max-width: 480px){}

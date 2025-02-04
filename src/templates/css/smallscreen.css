@@ -1,0 +1,75 @@
+/*CABEÇALHO*/
+.cabecalho {
+	padding: 0px 5%;
+}
+
+/*---CENTRO---*/
+	.principal {
+	background: url(../img/fundo-code.jpg);
+	background-size: 1000px;
+	background-repeat: no-repeat;
+	background-position: center;
+	object-fit: cover;
+	width: 100%;
+	pointer-events: none;
+	clear: both;		
+	background-color: black;
+}
+
+	.principal video {
+	display: none;
+
+}
+
+/*---SOBRE---*/
+
+.sobre{
+	padding: 20px;
+}
+
+.sobre .foto{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 150px;
+	height: 150px;
+}
+
+.sobre h3{
+	font-size: 1.2em;
+}
+
+/*---SERVIÇOS---*/
+.servicos{
+	height: auto;
+}
+
+.cont_serv{
+	width: 300px;	
+}
+
+.cont_serv i{
+	text-align: center;
+	float: none;
+	font-size: 100px;
+	color: #7B68EE;
+	margin-left: 35%;
+}
+
+/*----------CONTATO----------*/
+
+.contato{
+
+}
+
+.contato table td #nome{
+	width: 16em;
+}
+
+.contato table td #email{
+	width: 16em;
+}
+
+.contato table td #mensagem{
+	width: 16em;
+	height: 22em;
+}

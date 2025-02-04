@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Gerenciar Categorias - Área Administrativa - DOUGLAS REIS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/gerenciar_dados.css" />
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="../img/logo.png" alt="">
+            <h1>Área Administrativa</h1>
+        </div>
+
+        <div>
+            <a href=""><h1 class="toBlog">Blog &rarr;</h1></a>
+        </div>
+    </header>
+
+    <button id="btnNav" class=""><span class="btn-hamburger"></span></button>
+    <nav>
+        <h3>Menu</h3>
+        <hr><br>
+        <h3>&larr; Home</h3>
+        <ul>
+            <li>Criar Projeto</li>
+            <li>Gerenciar Projetos</li>
+            <li>Gerenciar Categorias</li>
+            <li>Gerenciar Dados ADM</li>
+            <li>Sair</li>
+        </ul>
+        <!--
+            Criar Projeto
+Gerenciar Projetos
+Categorias
+Gerenciar Categorias
+Dados ADM
+Editar Dados
+        -->
+    </nav>
+
+    <main>
+        <div class="container">
+
+            <h1>Gerenciar Dados</h1>
+
+
+            <form method="post">
+                <label for="nome">Nome:</label></br>
+                <input type="text" id="nome" name="nome" value="Douglas Reis">
+                </br>
+                <label for="login">Login:</label></br>
+                <input type="text" id="login"name="login" value="douglas-reis_ads" disabled>
+                </br>
+                <label for="senha">Senha:</label></br>
+                <input type="password" id="senha" name="senha" value="$2y$10$ftazKzYEXGh5j3zKhAOphuumVnlHI3Mfa2iJl2dnBlk1OlJcxxBry">
+                </br>
+
+                <button id="salvar">Salvar</button>
+                <input type="hidden" name="env" value="alt">
+            </form>
+
+        </div>
+    </main>
+
+    <section class="clearfix"></section>
+
+    <footer>
+
+        <h2>Frase Motivacional</h2>
+
+    </footer>
+</body>
+
+</html>

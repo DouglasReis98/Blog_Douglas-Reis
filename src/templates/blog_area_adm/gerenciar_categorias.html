@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Gerenciar Categorias - Área Administrativa - DOUGLAS REIS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/gerenciar_categorias.css" />
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="../img/logo.png" alt="">
+            <h1>Área Administrativa</h1>
+        </div>
+
+        <div>
+            <a href=""><h1 class="toBlog">Blog &rarr;</h1></a>
+        </div>
+    </header>
+
+    <button id="btnNav" class=""><span class="btn-hamburger"></span></button>
+    <nav>
+        <h3>Menu</h3>
+        <hr><br>
+        <h3>&larr; Home</h3>
+        <ul>
+            <li>Criar Projeto</li>
+            <li>Gerenciar Projetos</li>
+            <li>Gerenciar Categorias</li>
+            <li>Gerenciar Dados ADM</li>
+            <li>Sair</li>
+        </ul>
+        <!--
+            Criar Projeto
+Gerenciar Projetos
+Categorias
+Gerenciar Categorias
+Dados ADM
+Editar Dados
+        -->
+    </nav>
+
+    <main>
+        <div class="container">
+
+            <h1>Gerenciar Categorias</h1>
+
+
+            <form method="post">
+                <input type="text" name="categoria" required class="inCategoria">
+                <input type="submit" id="cadastrar" value="Cadastrar" class="cat-salvar">
+                <input type="hidden" name="env" value="cat">
+            </form>
+
+            <div class="categorias">
+                <h2>Categorias</h2>
+                <table>
+
+                    <tr>
+                        <td>Aplicação Web</td>
+                        <td><a href=''>Deletar</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>App Mobile</td>
+                        <td><a href=''>Deletar</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Site</td>
+                        <td><a href=''>Deletar</a></td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+    </main>
+
+    <section class="clearfix"></section>
+
+    <footer>
+
+        <h2>Frase Motivacional</h2>
+
+    </footer>
+</body>
+
+</html>

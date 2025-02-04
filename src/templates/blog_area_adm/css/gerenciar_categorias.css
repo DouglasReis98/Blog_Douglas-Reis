@@ -1,0 +1,45 @@
+form, .categorias{
+    width: 60%;
+    margin: 2em auto;
+}
+
+form .inCategoria{
+    width: 70%;
+    border: none;
+    outline: 0;
+    border-bottom: 2px solid #505050;
+    font-size: 1em;
+}
+
+#cadastrar{
+    font-family: Teko;
+    width: fit-content;
+    font-size: 1em;
+    padding: .5rem 2em;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(107, 225, 255);
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#cadastrar:hover{
+    background-color: #00327e;
+    color: #fff;
+}
+
+#cadastrar:active{
+    background-color: #001d49;
+    color: #fff;
+}
+
+table{
+    width: 100%;
+}
+
+table tr td:nth-child(2){
+    width: fit-content;
+    text-align: center;
+    color: red;
+}

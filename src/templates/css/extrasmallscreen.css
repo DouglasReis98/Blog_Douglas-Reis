@@ -1,0 +1,28 @@
+/*---CENTRO---*/
+.titulo-subtitulo h2 {
+
+	font-size: 1em;
+}
+
+/*SOBRE*/
+.sobre{
+	height: 100vh;
+}
+
+/*----------CONTATO----------*/
+
+.contato{
+	height: 100%;
+}
+
+.contato table td #nome{
+	width: 14em;
+}
+
+.contato table td #email{
+	width: 14em;
+}
+
+.contato table td #mensagem{
+	width: 14em;
+}

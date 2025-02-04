@@ -1,0 +1,11 @@
+/* Tablets Grandes e Laptops */
+@media (max-width: 1199px){}
+
+/* Tablets Pequenos */
+@media (max-width: 991px){}
+
+/* Dispositivos Pequenos */
+@media (max-width: 767px){}
+
+/* Mobile */
+@media (max-width: 480px){}

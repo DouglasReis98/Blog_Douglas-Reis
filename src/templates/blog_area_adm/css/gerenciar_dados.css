@@ -1,0 +1,41 @@
+form{
+    width: 60%;
+    margin: 2em auto;
+}
+
+form label{
+    font-family: Teko;
+    font-size: 1.2em;
+}
+
+form input{
+    width: 100%;
+    border: none;
+    outline: 0;
+    border-bottom: 2px solid #505050;
+    font-size: 1em;
+}
+
+#salvar{
+    font-family: Teko;
+    width: 100%;
+    font-size: 1em;
+    padding: .5rem 2em;
+    margin: 1em auto;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(107, 225, 255);
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#salvar:hover{
+    background-color: #00327e;
+    color: #fff;
+}
+
+#salvar:active{
+    background-color: #001d49;
+    color: #fff;
+}

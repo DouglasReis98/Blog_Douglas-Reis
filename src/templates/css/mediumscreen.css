@@ -1,0 +1,148 @@
+/*---LOGO---*/	
+.logo a img {
+    margin-top: 10px;
+}
+
+/*-----------------------------------------INDEX-----------------------------------------*/
+#cabecalho {
+	padding: 0 1rem 0 1rem;
+}
+
+#btn-mobile{
+  display: flex;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  gap: .5rem;
+}
+  
+  
+  #hamburger{
+    border-top: 2px solid;
+    width: 20px;
+    color: white;
+  }
+  
+  #hamburger::after, #hamburger::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentcolor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+  }
+  
+  #menu.active #hamburger{
+    border-top-color: transparent;
+  }
+  
+  #menu.active #hamburger::before{
+    transform: rotate(135deg);
+  }
+  
+  #menu.active #hamburger::after{
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  #menu-botoes{
+    display:block;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    transition: .6s;
+    top: 70px;
+    right: 0;
+    background-color: rgba(0, 0, 255, 80%);
+    z-index: 1000;
+    visibility: hidden;
+    overflow: hidden;
+    overflow-y: hidden;
+  }
+
+  #menu.active #menu-botoes{
+    height: calc(100vh - 70px);
+    visibility: visible;
+  }
+  
+  #menu-botoes a, #aba-busca{
+    padding: 1.5em 0;
+    margin: 0 1em;
+    border-bottom: 2px solid rgba(0, 0, 0, .05);
+  }
+
+/*CONTEÚDO*/
+
+	#conteudo{
+		width: 95%;
+		height: auto;
+		margin: 10px 10px 5px 10px;/*topo, direita, inferior, esquerda*/
+		justify-content: center;
+	}
+
+	#conteudo img /*h2*/{
+		width: 100%;
+		height: 100%;
+	}
+
+		#conteudo h3{
+		font-size: 1.5em;
+	}
+
+
+/*---------ABA LATERAL----------*/
+	
+	.aba-lateral{
+	display: inline-block;
+	width: 95%;
+	height: auto;
+	margin: 20px 10px 5px 10px;/*topo, direita, inferior, esquerda*/
+	}
+
+/********************ARTIGOS************************/
+  #titulo{
+  font-size: 1em;
+}
+
+#principal h6{
+    width: 90%;
+    margin: 20px 0 10px 20px;/*topo, direita, inferior, esquerda*/
+  }
+
+  #texto-artigo{
+  width: 90%;
+  margin: 20px 0 10px 20px;/*topo, direita, inferior, esquerda*/
+}
+
+#disqus_thread {
+    width: 90%;
+    margin: 20px 0 10px 20px;
+}
+
+/*----------CONTATO----------*/
+
+.contato{
+	height: 100%;
+}
+
+.contato table td #nome{
+	width: 18em;
+}
+
+.contato table td #email{
+	width: 18em;
+}
+
+.contato table td #mensagem{
+	resize: none;
+	width: 18em;
+	height: 22em;
+}
+
+footer{
+  background-image: linear-gradient(#2222cc, #5f97ff, #2222cc);
+}

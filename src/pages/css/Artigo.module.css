@@ -1,0 +1,100 @@
+#titulo{
+	font-family:'Verdana', sans-serif;
+	text-transform: uppercase;
+	display: block;
+	background-color: #66c8f7;
+	font-size: 2em;
+	color: white;	
+	text-align: center;
+	padding: 20px 40px 20px 50px;
+    position: relative;
+}
+
+#principal{
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 70px;
+}
+
+.artigo{
+    width: 60%;
+    float: left;
+    margin: 30px 10px 10px 40px;/*topo, direita, inferior, esquerda*/
+}
+
+#img_artigo{
+    width: 30em;
+    display: block;
+    margin: 10px auto;
+    
+}
+.artigo h6{
+    display: inline;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 20px 0 10px 0;/*topo, direita, inferior, esquerda*/
+}
+
+.artigo p{
+box-sizing: border-box;
+text-align: justify;
+margin: 20px 5px 10px 0;/*topo, direita, inferior, esquerda*/
+font-family:'Trebuchet MS', sans-serif;
+font-size: 1em;
+}	
+
+.artigo .tags{
+    display: inline;
+}
+
+.artigo .tags:hover{
+	color: rgb(0, 0, 204);
+}
+
+#disqus_thread{	
+width: 90%;
+    margin: 20px 0 10px 60px;
+}
+
+/* Tablets Grandes e Laptops */
+@media (max-width: 1199px){}
+
+/* Tablets Pequenos */
+@media (max-width: 991px){
+
+    #titulo{
+        font-size: 1em;
+    }
+
+    .artigo{
+        width: 100%;
+        margin: 30px 0;
+        float: none;
+    }
+
+    #img_artigo{
+        width: 90%;
+    }
+    
+    .artigo h6{
+        display: block;
+        margin: 20px 10px;
+        width: auto;
+
+    }
+    
+    .artigo p{
+        margin: 20px 10px;
+    }
+
+    #texto_artigo{
+    width: 100%;
+    margin: 20px 0 10px 20px;/*topo, direita, inferior, esquerda*/
+    }
+}
+
+/* Dispositivos Pequenos */
+@media (max-width: 767px){}
+
+/* Mobile */
+@media (max-width: 480px){}

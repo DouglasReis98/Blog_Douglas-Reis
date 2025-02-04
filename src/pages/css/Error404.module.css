@@ -1,0 +1,27 @@
+#principal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 30px);
+    top: 70px;
+    text-align: center;
+}
+#principal h1, #principal h2, #principal h3{
+    margin: 2em;
+}
+
+a{
+    color: #5280ff;
+}
+
+#principal a:hover{
+    color: #0031b8;
+}
+
+#principal h1{
+    font-size: 2em;
+}
+
+#principal h2{
+    font-size: 1.2em;
+}
