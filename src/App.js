@@ -27,8 +27,8 @@ function App() {
           <Route path="/artigos" element={<Artigos />} />
           <Route path="/contato" element={<Contato />} />
           <Route path="/artigos/:slug" element={<Artigo />} />
+          <Route path="/busca" element={<BuscaArtigos />} />         
           <Route path="*" element={<Error404 />} />
-          <Route path="/busca" element={<BuscaArtigos />} />
         </Routes>
       <Rodape />
     </div>
