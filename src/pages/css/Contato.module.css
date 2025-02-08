@@ -55,9 +55,17 @@
 	font-weight: bold;
 	padding: 10px;
 	color: white;
+	cursor: pointer;
 	background-color: #47b5e2;
 }
 
+.btn:hover {
+	background-color: #005aa3;
+}
+
+.btn:active {
+	background-color: #003674;
+}
 /* Tablets Grandes e Laptops */
 @media (max-width: 1199px){
 	/*----------CONTATO----------*/
