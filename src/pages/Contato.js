@@ -33,6 +33,7 @@ const Contato = () => {
           setName("");
           setEmail("");
           setMessage("");
+		  alert("Seu email foi enviado com sucesso e será respondido assim que possível!");
         },
         (err) => {
           console.log("Erro: ", err);
