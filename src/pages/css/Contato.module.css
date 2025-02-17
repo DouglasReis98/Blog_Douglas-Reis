@@ -88,17 +88,21 @@
 	height: 100%;
 }
 
+.contato table {
+	width: 95%;	
+}
+
 .contato table td #nome{
-	width: 18em;
+	width: 100%;
 }
 
 .contato table td #email{
-	width: 18em;
+	width: 100%;
 }
 
 .contato table td #mensagem{
 	resize: none;
-	width: 18em;
+	width: 100%;
 	height: 22em;
 }
 

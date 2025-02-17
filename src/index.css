@@ -27,3 +27,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#disqus_thread{	
+    width: 90%;
+    margin:  10px auto;
+}

@@ -51,11 +51,6 @@ font-size: 1em;
 	color: rgb(0, 0, 204);
 }
 
-#disqus_thread{	
-width: 90%;
-    margin: 20px 0 10px 60px;
-}
-
 /* Tablets Grandes e Laptops */
 @media (max-width: 1199px){}
 
