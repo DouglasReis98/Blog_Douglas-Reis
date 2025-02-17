@@ -94,7 +94,11 @@ width: 90%;
 }
 
 /* Dispositivos Pequenos */
-@media (max-width: 767px){}
+@media (max-width: 767px){
+    .tags{
+        margin: 20px 2px !important;
+    }
+}
 
 /* Mobile */
 @media (max-width: 480px){}
