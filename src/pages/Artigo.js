@@ -45,7 +45,6 @@ const Artigo = () => {
                     {tag}
                   </NavLink>
                 </p>
-                
               ))}
             </h6>
             <div className={style.texto}>{parse(post.texto)}</div>
