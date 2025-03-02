@@ -12,7 +12,7 @@ const Navbar = () => {
     const handleSearch = (e) => {
         e.preventDefault();
         if (buscaArtigo) {
-            navigate(`/blog/busca?query=${buscaArtigo}`);
+            navigate(`/busca?query=${buscaArtigo}`);
         }
     };
 

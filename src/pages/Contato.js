@@ -1,11 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import style from "./css/Contato.module.css";
 import emailjs from "@emailjs/browser";
+import { analytics } from "../firebaseConfig/firebaseConfig";
+import { logEvent } from "firebase/analytics";
+import { useLocation } from "react-router-dom";
 
 const Contato = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  
+  const location = useLocation();
+  
+  useEffect(() => {
+		logEvent(analytics, 'page_view', { page_path: window.location.pathname })
+	}, [location])
 
   function sendEmail(e) {
     e.preventDefault();
