@@ -44,7 +44,7 @@ font-size: 1em;
 }	
 
 .artigo .tags{
-    display: inline;
+    display: inline-block;
 }
 
 .artigo .tags:hover{
