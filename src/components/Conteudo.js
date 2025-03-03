@@ -38,7 +38,7 @@ const Conteudo = () => {
 
 					<img src={item.urlImg} alt={item.imagem}/>
 					<h3>{item.titulo}</h3>
-					{parse(item.texto.substring(0, 100) + "...")}
+					{parse(item.texto.substring(0, 200) + "...")}
 					<NavLink to={`/artigos/${item.slug}`}>Ver Mais</NavLink>
 					<h5>{item.data} - {item.tags.map((tag) => (
 						<NavLink to={`/busca?query=${tag}`} key={tag}><p><span>#</span>{tag}</p></NavLink>

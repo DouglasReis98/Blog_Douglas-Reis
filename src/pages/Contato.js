@@ -10,6 +10,10 @@ const Contato = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   
+  useEffect(()=>{
+    document.title = "Contato - Blog Douglas Reis"
+  }, [])
+
   const location = useLocation();
   
   useEffect(() => {

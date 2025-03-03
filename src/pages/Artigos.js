@@ -13,6 +13,10 @@ const Artigos = () => {
 useEffect(() => {
     logEvent(analytics, 'page_view', { page_path: window.location.pathname })
   }, [location])
+
+  useEffect(()=>{
+    document.title = "Artigos - Blog Douglas Reis"
+  }, [])
   
   return (
     <>

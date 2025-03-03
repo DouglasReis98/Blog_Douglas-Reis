@@ -16,12 +16,6 @@ const BuscaArtigos = () => {
   const queryParam = useQuery();
   const buscaArtigo = queryParam.get("query");
 
-  useEffect(() => {
-    if (buscaArtigo) {
-      fetchPostsBySearch();
-    }
-  }, [buscaArtigo]);
-
   const fetchPostsBySearch = async () => {
     setIsLoading(true);
 
@@ -47,6 +41,14 @@ const BuscaArtigos = () => {
     setResults(postsData);
     setIsLoading(false);
   };
+
+  useEffect(() => {
+    if (buscaArtigo) {
+      fetchPostsBySearch();
+    }
+    document.title = `Buscando por ${buscaArtigo} - Blog Douglas Reis`
+  }, [buscaArtigo]);
+  
   window.scrollTo(0, 0);  // Rola para o topo da página
 
   return (
