@@ -7,6 +7,7 @@ import { db, analytics } from "../firebaseConfig/firebaseConfig";
 import { updateDoc, increment, doc, getDoc } from "firebase/firestore";
 import Comentarios from "../components/Comentarios";
 import { logEvent } from "firebase/analytics";
+import { Helmet } from "react-helmet";
 
 const Artigo = () => {
   const { slug } = useParams();
@@ -60,6 +61,10 @@ const Artigo = () => {
     <main id={style.principal}>
       {post ? (
         <>
+          <Helmet>
+            <meta name="keywords" content={post.tags.join(", ")} />
+          </Helmet>
+
           <h2 id={style.titulo}>{post.titulo}</h2>
           <div className={style.artigo}>
             <img id={style.img_artigo} src={post.urlImg} alt={post.titulo} />
