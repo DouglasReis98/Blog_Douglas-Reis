@@ -34,10 +34,14 @@ const AbaLateral = () => {
           <p key={d.id}>{d.titulo}</p>
         ))}
       </div>
+
+    {/*
       <div className={style.publicidade}>
         <h3>Publicidade</h3>
         <Publicidade dataAdSlot="3938927771"/>
       </div>
+   
+    */} 
     </aside>
   );
 };
