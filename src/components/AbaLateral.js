@@ -3,7 +3,7 @@ import style from "../components/css/AbaLateral.module.css";
 import { db } from "../firebaseConfig/firebaseConfig";
 import { collection, getDocs, limit, orderBy, query } from "firebase/firestore";
 import { useEffect } from "react";
-import Publicidade from "./Publicidade";
+// import Publicidade from "./Publicidade";
 
 const AbaLateral = () => {
   const [data, setData] = useState([]);
