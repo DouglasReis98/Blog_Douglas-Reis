@@ -16,7 +16,10 @@ const BuscaArtigos = () => {
   const queryParam = useQuery();
   const buscaArtigo = queryParam.get("query");
 
-  const fetchPostsBySearch = async () => {
+  
+
+  useEffect(() => {
+    const fetchPostsBySearch = async () => {
     setIsLoading(true);
 
     const buscaArtigoArray = buscaArtigo.trim().split(" ");
@@ -42,7 +45,6 @@ const BuscaArtigos = () => {
     setIsLoading(false);
   };
 
-  useEffect(() => {
     if (buscaArtigo) {
       fetchPostsBySearch();
     }
