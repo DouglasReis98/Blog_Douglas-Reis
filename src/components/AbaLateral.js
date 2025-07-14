@@ -3,7 +3,7 @@ import style from "../components/css/AbaLateral.module.css";
 import { db } from "../firebaseConfig/firebaseConfig";
 import { collection, getDocs, limit, orderBy, query } from "firebase/firestore";
 import { useEffect } from "react";
-// import Publicidade from "./Publicidade";
+import Publicidade from "./Publicidade";
 
 const AbaLateral = () => {
   const [data, setData] = useState([]);
@@ -34,14 +34,11 @@ const AbaLateral = () => {
           <p key={d.id}>{d.titulo}</p>
         ))}
       </div>
-
-    {/*
+      
       <div className={style.publicidade}>
         <h3>Publicidade</h3>
         <Publicidade dataAdSlot="3938927771"/>
       </div>
-   
-    */} 
     </aside>
   );
 };
