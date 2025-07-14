@@ -17,7 +17,7 @@ const Rodape = () => {
 				</div>
 
 				<div className={style.rodape_col}>
-					<a href="index.html" title="Douglas Reis"><img src={logoblog} /></a>
+					<a href="index.html" title="Douglas Reis"><img src={logoblog} alt=''/></a>
 					<ul className={style.redes}>
 						<li><a href="https://github.com/DouglasReis98">
                         <FaGithub />

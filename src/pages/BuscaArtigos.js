@@ -66,7 +66,7 @@ const BuscaArtigos = () => {
                 {parse(item.texto.substring(0, 100) + "...")}
                 <NavLink to={`/artigos/${item.slug}`}>Ver Mais</NavLink>
                 <h5>
-                  {item.data} -{" "}
+                  {item.data.toDate().toLocaleDateString("pt-BR")} -{" "}
                   {item.tags.map((tag) => (
                     <NavLink to={`/busca?query=${tag}`}>
                       <p key={tag}>
