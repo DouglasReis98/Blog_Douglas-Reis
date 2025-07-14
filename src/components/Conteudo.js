@@ -22,7 +22,7 @@ const Conteudo = () => {
 	}, []);
 
 
-	const objPostagens = data.map(item => ({ id: item.id, titulo: item.titulo, slug: item.slug, data: item.data.toDate().toLocaleDateString("pt-BR"), imagem: item.imagem, urlImg: item.urlImg, texto: item.texto, tags: item.tags }));
+	const objPostagens = data.map(item => ({ id: item.id, titulo: item.titulo, slug: item.slug, imagem: item.imagem, urlImg: item.urlImg, texto: item.texto, tags: item.tags }));
 	const postagens = objPostagens.sort((a, b) => {return b.id - a.id})
 	/*
 	const handlePostClick = (item) => {
