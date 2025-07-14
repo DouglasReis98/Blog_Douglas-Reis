@@ -70,7 +70,7 @@ const Artigo = () => {
             <img id={style.img_artigo} src={post.urlImg} alt={post.titulo} />
             <h6>
               {views === 1 ? `${views} Visualização` : `${views} Visualizações`}{" "}
-              || Data de Postagem: || Tags:{" "}
+              || Data de Postagem: {post.data.toDate().toLocaleDateString("pt-BR")} || Tags:{" "}
               {post.tags.map((tag) => (
                 <p className={style.tags} key={post.tags.indexOf(tag)}>
                   <NavLink to={`/busca?query=${tag}`}>
